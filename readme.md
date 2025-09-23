@@ -63,7 +63,7 @@ This is the official repository 👑 for the WenetSpeech-Chuan dataset and the s
 * Contains 10,000 hours of large-scale Chuan-Yu dialect speech corpus with rich annotations, the largest open-source resource for Chuan-Yu dialect speech research.
 * Stores metadata in a single JSON file, including audio path, duration, text confidence, speaker identity, SNR, DNSMOS, age, gender, and character-level timestamps. Additional metadata tags may be added in the future.
 * Covers ten domains: Short videos, Entertainment, Live streams, Documentary, Audiobook, Drama, Interview, News and others.
-<div align="center"><img width="800px" src="src/figs/domain.png" /></div>
+<div align="center"><img width="400px" src="src/figs/domain.png" /></div>
 
 ## Benchmark
 To address the unique linguistic characteristics of Chuan-Yu dialect, we propose WSChuan-eval, a comprehensive benchmark encompassing both Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) tasks.
