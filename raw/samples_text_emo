@@ -1,0 +1,16 @@
+001 short_videos sc0000006_36680_44180 来哥哥再给你唱首歌好儿哎呦把伴奏给我放起来放就放嘛还要躲人家钩子 ||| confidence=0.9792 ||| emotion=Happiness
+002 short_videos sc0000007_26770_30940 对不起只有二娃才能让我真正体会作为女人的快乐 ||| confidence=0.9545 ||| emotion=Unknown
+003 live_stream sc0000282_499710_506300 我想去逛街欢迎进入直播间晚上好那我的名字是怎么说的呢 ||| confidence=1.0000 ||| emotion=Happiness
+004 live_stream sc0000282_5052280_5059460 梦见的就是你不行啊有四川话根本唱不起来根本唱不起来呀 ||| confidence=0.9103 ||| emotion=Happiness
+005 drama sc0000427_1828270_1837100 就临走那天挑了个飘了一下嗨呀弟弟灵魂儿就飞上九霄云就飘着一下魂都飞了对不对 ||| confidence=0.9369 ||| emotion=Surprise
+006 drama sc0000427_1868750_1876340 是不是给人感觉后头是青花亮色的然后说话是很平和的眼神是不慌乱的不散的 ||| confidence=0.9608 ||| emotion=Anger
+007 documentary sc0000428_232380_247250 顺治皇帝一生充满传奇色彩六岁登基十四岁亲政在他亲政近十年间不但真正完成了国家大一统的任务而且为清朝经济的振兴打下了坚实的基础 ||| confidence=1.0000 ||| emotion=Neutral
+008 documentary sc0006199_319500_326530 唤起路由无限的感慨使他更加痛恨官场的侵轧污浊 ||| confidence=0.9091 ||| emotion=Sadness
+009 audio_book sc0005392_1135790_1144620 看面貌约五十左右却自称活了两百多岁在清顺治时出家当过和尚还有杜蝶为证 ||| confidence=0.9608 ||| emotion=Neutral
+010 audio_book sc0005392_2248910_2256770 其言曰士大夫以其见闻之广反各有所偏自有负担杀者有负良骑者 ||| confidence=0.9286 ||| emotion=Neutral
+011 news sc0040572_234940_238430 据说有网友坐飞机的时候呢广播全程播报 ||| confidence=1.0000 ||| emotion=Neutral
+012 news sc0030653_619430_630020 将溃疡两周以上都应该及时就医据了解啊小云平时呢都喜欢吃比较烫的饭菜也喜欢吃麻辣烫火锅之类的高温食物 ||| confidence=0.9932 ||| emotion=Happiness
+013 entertainment sc0030699_163820_169280 绝佳好位置好像我被看到了就问你敢不敢进来吧你一套带走猪脚亮 ||| confidence=1.0000 ||| emotion=Unknown
+014 entertainment sc0040796_41190_46570 两岸猿声啼不住有家难回车里住 ||| confidence=1.0000 ||| emotion=Unknown
+015 reading sc0030408_505810_515710 杨大人一律就退还会再要求以关注货币来补助这个差额天宝年间杨胜坚转任 ||| confidence=0.9091 ||| emotion=Anger
+016 reading sc0030408_656420_661790 做钱的速度还快这真的是一个经济爆发式增长的时代 ||| confidence=0.9565 ||| emotion=Surprise
