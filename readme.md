@@ -16,9 +16,9 @@
   <sup>5</sup> WeNet Open Source Community <br>
 </p>
 
-
+<!-- 🌐 <a href="https://huggingface.co/spaces/ASLP-lab/WenetSpeech-Chuan"> Huggingface nbsp&nbsp  |   &nbsp&nbsp  Space</a> -->
 <p align="center">
-🌐 <a href="https://huggingface.co/spaces/ASLP-lab/WenetSpeech-Chuan"> Huggingface Space</a> &nbsp&nbsp  |   &nbsp&nbsp 🤖 <a href="https://huggingface.co/ASLP-lab/WSChuan-ASR"> ASR Models</a> &nbsp&nbsp   |   &nbsp&nbsp 👨‍💻 <a href="https://huggingface.co/ASLP-lab/WSChuan-TTS"> TTS Models</a>
+🤖 <a href="https://huggingface.co/ASLP-lab/WSChuan-ASR"> ASR Models</a> &nbsp&nbsp   |   &nbsp&nbsp 👨‍💻 <a href="https://huggingface.co/ASLP-lab/WSChuan-TTS"> TTS Models</a>
 <br>
 📑 <a href="https://arxiv.org/abs/2509.18004">Paper</a> &nbsp&nbsp  |  &nbsp&nbsp 🎤 <a href="https://aslp-lab.github.io/WenetSpeech-Chuan/">Demo Page</a> &nbsp&nbsp | &nbsp&nbsp 💬 <a href="https://github.com/ASLP-lab/WenetSpeech-Chuan?tab=readme-ov-file#contact">Contact Us</a>&nbsp&nbsp 
 </p>
