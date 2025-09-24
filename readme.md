@@ -127,8 +127,11 @@ The initial stage of the pipeline focuses on data acquisition, segmentation, and
 
 
 ### Speech Quality Annotation
-To support high-fidelity tasks such as TTS and voice conversion, WenetSpeech-Pipe integrates a comprehensive quality assessment stage. Each segment is evaluated by (i) [Brouhaha](https://github.com/marianne-m/brouhaha-vad) for signal-to-noise ratio (SNR), (ii) [DNSMOS](https://github.com/microsoft/DNS-Challenge) for perceptual quality (MOS), and (iii) bandwidth detection for spectral coverage. These complementary measures yield structured annotations with quantitative scores and spectral references.
+To ensure the audio quality of processed data, we implement an automated quality assessment stage. To select data across different quality levels, we use timestamp-aligned speech as input and extract metrics such as duration and Signal-to-Noise Ratio (SNR). These features are then used to compute a Word-level Virtual Mean Opinion Score (WVMOS), which serves as a proxy for perceptual audio quality. Low-quality audio samples are then discarded.
+
+
 <div align="center"><img width="400px" src="src/figs/quality_distribution.jpg" /></div>
+
 
 ### Automatic Speech Recognition
 We select three models with the best performance on Cantonese to perform multi-system labeling: SenseVoice, TeleASR, and FireRed-ASR. For each audio file, we obtain the corresponding multi-system transcriptions.
