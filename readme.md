@@ -57,6 +57,31 @@ This is the official repository 👑 for the WenetSpeech-Chuan dataset and the s
 | <span style="background-color: #d4edda; padding: 0 2px;">Paraformer + internal data⭐</span> | 220M | <u>11.93</u> | <u>21.82</u> | <u>13.14</u> | <u>15.61</u> | 6.77 | <u>13.85</u> |
 | <span style="background-color: #d4edda; padding: 0 2px;">Paraformer-WSC-Finetune + internal data</span>⭐ | 220M | **11.59** | **21.59** | **12.87** | **14.59** | 6.28 | **13.38** |
 
+## TTS Evaluation
+*Note: **Bold** indicates best performance, <u>underlined</u> indicates second-best performance, and <span style="background-color: #d4edda; padding: 0 2px;">light green background</span> indicates models models trained on WenetSpeech-Chuan or additionally finetuned on an internal high-quality dataset.*
+
+#### TTS Results on WSC-Eval-TTS-easy.
+| Model | CER(%)↓ | SIM(%)↑ | IMOS↑ | SMOS↑ | AMOS↑ |
+| --- | --- | --- | --- | --- | --- |
+| Step-Audio-TTS | 10.83 | 67.66 | 3.81 | 2.86 | 3.15 |
+|CosyVoice 2.0 |	7.14|	70.27|	3.88|	3.10	|3.69|
+|Qwen-TTS	|4.13|-	|3.95	|-|	3.90|
+|<span style="background-color: #d4edda; padding: 0 2px;">CosyVoice2-WSC	|4.28	|72.78|	**4.13**|	3.94	|4.05|
+|<span style="background-color: #d4edda; padding: 0 2px;">CosyVoice2-WSC-SFT|	**4.08**	|**78.84**	|4.10	|**4.16**|	**4.20**|
+
+#### TTS Results on WSC-Eval-TTS-hard.
+| Model | CER(%)↓ | SIM(%)↑ | IMOS↑ | SMOS↑ | AMOS↑ |
+| --- | --- | --- | --- | --- | --- |
+| Step-Audio-TTS | 12.52|	54.52	|3.75	|2.77|	3.06 |
+|CosyVoice 2.0 |	9.06	|60.10	|3.96	|2.73|	3.81|
+|Qwen-TTS	|7.35|	-|	**4.02**|	-|	3.88|
+|<span style="background-color: #d4edda; padding: 0 2px;">CosyVoice2-WSC	|8.78|	62.59|	3.85|	2.78	|3.92|
+|<span style="background-color: #d4edda; padding: 0 2px;">CosyVoice2-WSC-SFT|	**7.22**|	**67.96**|	4.01|	**3.03**	|**3.98**|
+
+
+
+
+
 ---
 
 ## WenetSpeech-Chuan Overview
