@@ -138,7 +138,7 @@ To enhance the accuracy of automatic speech recognition (ASR) transcriptions, bu
 
 
 
-<div align="center"><img width="500px" src="src/figs/LLM_GER.png" /></div>
+<div align="center"><img width="700px" src="src/figs/LLM_GER.png" /></div>
 
 The prompt is presented in the figure below:
 
