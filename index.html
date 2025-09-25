@@ -69,7 +69,7 @@
         backdrop-filter: blur(6px); /* 毛玻璃，支持的浏览器会更好看 */
       ">
         <a href="#abstract" class="nav-link">Abstract</a>
-        <a href="#video" class="nav-link">Promotional Videos</a>
+        <a href="#video" class="nav-link">Promotional Video</a>
         <a href="#pipeline" class="nav-link">Chuan-Pipeline</a>
         <a href="#dataset" class="nav-link">WenetSpeech-Chuan</a>
         <a href="#asr" class="nav-link">ASR Leaderboard</a>
@@ -834,6 +834,8 @@
 
 
 <h2 id="tts_demo" style="text-align: center;">TTS Demo<a name="Comparison"></a></h2>
+<h3 id="tts_demo" style="text-align: center;">CosyVoice2-WSC<a name="Comparison"></a></h3>
+
   <table style="margin: 0 auto; width: 95%; border-collapse: collapse;">
     <thead>
       <tr id="header-row">
@@ -851,8 +853,83 @@
 <p style="text-align: center; font-size: 14px; margin-top: 10px; color: #555;">
   Llasa-1B-Chuan is the model we finetuned on the open-source <b>Llasa-1B model</b> with our WenetSpeech-Chuan.
 </p>
-
 <br>
+<h3 id="tts_demo" style="text-align: center;">CosyVoice2-WSC-SFT<a name="Comparison"></a></h3>
+<table style="margin: 0 auto; width: 95%; border-collapse: collapse; text-align: center; font-size: 1em;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 12px; width: 20%;">Text</th>
+      <th style="border: 1px solid #ccc; padding: 12px; width: 25%;">Reference Audio</th>
+      <th style="border: 1px solid #ccc; padding: 12px; width: 25%;">Synthetic Audio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 模型1行 -->
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 12px; text-align: left;">我跟你说哦，这几天重庆的天气真的是又热又湿，简直没法忍受，出门走几步就全身湿透了。</td>
+      <!-- Reference音频：引用F01_中立_20054.wav -->
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/ref/F22_愤怒_20012.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/sys/5.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </td>
+    </tr>
+    <!-- 模型2行 -->
+     <tr>
+      <td style="border: 1px solid #ccc; padding: 12px; text-align: left;">我们就当做好事一样，绝对不要让这样子的事情发生。领导答应之后哈，我就联系了他的妈老汉儿，把事情都跟他们的讲清楚了，然后把银行卡号拿到之后，按流程办理了退款。</td>
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/ref/F22_开心_20007.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/sys/10.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </td>
+    </tr>
+    <!-- 模型3行 -->
+     <tr>
+      <td style="border: 1px solid #ccc; padding: 12px; text-align: left;">晚上去吃烧烤，朋友非要点个变态辣的鸡翅，说是过瘾，结果吃了一口眼泪都出来了，嘴巴像被火烧一样，服务员都吓得给我们送牛奶来。</td>
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/ref/sichuan_man_20211012398.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/sys/3.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </td>
+    </tr>
+    <!-- 模型4行 -->
+     <tr>
+      <td style="border: 1px solid #ccc; padding: 12px; text-align: left;">你说话能不能不要那么冲，我跟你讲不是每个人都惯着你耍性子的，我脾气也有点儿爆！</td>
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/ref/sichuan_man_20211012399.wav" type="audio/wav">
+        </audio>
+      </td>
+      <td style="border: 1px solid #ccc; padding: 12px;">
+        <audio controls style="width: 90%; max-width: 250px;">
+          <source src="raw/TTS_samples_1/sys/8.wav" type="audio/wav">
+          Your browser does not support the audio element.
+      </td>
+    </tr>
+    
+
+
+
+
+  </tbody>
+</table>
+
+
 
 
     
