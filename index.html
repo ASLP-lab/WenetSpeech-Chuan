@@ -837,7 +837,14 @@
 
 
 <h2 id="tts_demo" style="text-align: center;">TTS Demo<a name="Comparison"></a></h2>
-<h3 id="tts_demo" style="text-align: center;">CosyVoice2-WSC with Comparison Models<a name="Comparison"></a></h3>
+<h3 id="tts_demo" style="text-align: center;">Model Comparison<a name="Comparison"></a></h3>
+
+<p style="font-size: 14px; margin-top: 10px; color: #555;">
+  CosyVoice2-WSC is a finetuned CosyVoice2 model using WenetSpeech-Chuan.
+</p>
+<p style="font-size: 14px; margin-top: 10px; color: #555;">
+  Llasa-1B-WSC is a finetuned Llasa-1B model using WenetSpeech-Chuan.
+</p>
 
   <table style="margin: 0 auto; width: 95%; border-collapse: collapse;">
     <thead>
@@ -850,14 +857,14 @@
       <tr><td colspan="8">Loading...</td></tr>
     </tbody>
   </table>
-<p style="text-align: center; font-size: 14px; margin-top: 10px; color: #555;">
-  The presented audio samples are outputs of the evaluated models on the <b>WSC-TTS-eval</b> test set.
-</p>
-<p style="text-align: center; font-size: 14px; margin-top: 10px; color: #555;">
-  Llasa-1B-Chuan is the model we finetuned on the open-source <b>Llasa-1B model</b> with our WenetSpeech-Chuan.
-</p>
+
+
 <br>
 <h3 id="tts_demo" style="text-align: center;">CosyVoice2-WSC-SFT<a name="Comparison"></a></h3>
+<p style="font-size: 14px; margin-top: 10px; color: #555;">
+Further supervised fine-tune CosyVoice2-WSC with 100 hours of internal high-quality data from two fixed speakers.
+</p>
+
 <table style="margin: 0 auto; width: 95%; border-collapse: collapse; text-align: center; font-size: 1em;">
   <thead>
     <tr>
@@ -941,10 +948,10 @@
 
 <script>
   // 配置
-  const systems = ["ref", "Cosyvoice2", "CosyVoice2-WSC", "StepAudio", "Llasa-1B-Chuan"];
+  const systems = ["ref", "Cosyvoice2", "CosyVoice2-WSC", "StepAudio", "Llasa-1B-WSC"];
   const systemDisplayNames = {
     "ref": "Reference",
-    "Llasa-1B-Chuan": "Llasa-1B-Chuan",
+    "Llasa-1B-WSC": "Llasa-1B-WSC",
     "Cosyvoice2": "Cosyvoice2",
     "StepAudio": "Step-Audio-TTS-3B",
     "CosyVoice2-WSC": "CosyVoice2-WSC",
@@ -955,7 +962,7 @@
   systems.forEach(sys => {
     const th = document.createElement('th');
     th.textContent = systemDisplayNames[sys] || sys;
-    if (sys === "Llasa-1B-Chuan" || sys === "CosyVoice2-WSC") {
+    if (sys === "Llasa-1B-WSC" || sys === "CosyVoice2-WSC") {
       th.style.backgroundColor = "#ffe0b2"; // 高亮颜色
       th.style.fontWeight = "bold";
     }
@@ -986,7 +993,7 @@
         // 各系统音频
         systems.forEach(sys => {
           const td = document.createElement('td');
-          if (sys === "Llasa-1B-Chuan" || sys === "CosyVoice2-WSC") {
+          if (sys === "Llasa-1B-WSC" || sys === "CosyVoice2-WSC") {
             td.style.backgroundColor = "#fff3e0"; // 高亮颜色
           }
           const audio = document.createElement('audio');
