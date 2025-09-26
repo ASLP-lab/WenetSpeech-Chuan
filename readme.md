@@ -171,6 +171,7 @@ Please cite our paper if you find this work useful:
 
 ## Contact
 If you are interested in leaving a message to our research team, feel free to email yhdai@mail.nwpu.edu.cn or ziyu_zhang@mail.nwpu.edu.cn.
+You’re also welcome to join our WeChat group for technical discussions, updates, and — as mentioned above — access to pre-processed audio data.
 <p align="center">
 <img src="src/figs/wechat.jpg" width="300" alt="WeChat Group QR Code"/>
 <br>
