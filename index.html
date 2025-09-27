@@ -31,10 +31,12 @@
     
     <h4 id="broadcast" style="margin: 1em 0; overflow: hidden; white-space: nowrap;">
       <div class="marquee-container">
+        <!-- 核心修复：在 "at" 后添加空格，再衔接超链接 -->
         <div class="marquee-content">
           📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
           <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- 用足够空格分隔重复内容，确保无缝衔接不拥挤 -->
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
           <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
         </div>
@@ -47,29 +49,33 @@
       width: 100%;
       overflow: hidden;
     }
-    
+    /* 滚动速度调慢（80秒/轮，数值越大越慢），保留无限循环 */
     .marquee-content {
       display: flex;
-      animation: marquee 60s linear infinite;
-      will-change: transform;
+      animation: marquee 80s linear infinite;
+      will-change: transform; /* 提升动画流畅度 */
     }
-    
     @keyframes marquee {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
+      0% { transform: translateX(100%); } /* 从右侧完全进入 */
+      100% { transform: translateX(-100%); } /* 从左侧完全退出，无缝衔接 */
+    }
+    /* 可选：给链接加 hover 样式，提示可交互 */
+    .marquee-content a {
+      color: #2563eb; /* 链接蓝色，适配多数页面风格 */
+      text-decoration: underline;
+      margin: 0 2px; /* 避免链接与前后文本贴太近 */
     }
     </style>
     
     <script>
+    // 精准控制动画暂停/播放（只针对滚动内容，不影响其他元素）
     function stopMarquee() {
       document.querySelector('.marquee-content').style.animationPlayState = 'paused';
     }
-    
     function startMarquee() {
       document.querySelector('.marquee-content').style.animationPlayState = 'running';
     }
     </script>
-    
     
     <h1 id="">
       <center>WenetSpeech-Chuan: A Large-Scale Sichuanese Corpus With Rich Annotation For Dialectal Speech Processing</center>
