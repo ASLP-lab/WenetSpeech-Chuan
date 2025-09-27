@@ -33,12 +33,12 @@
       <div class="marquee-container">
         <!-- 核心修复：在 "at" 后添加空格，再衔接超链接 -->
         <div class="marquee-content">
-          📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
-          <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
+          📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at &nbsp;
+          <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()"> WenetSpeech-Yue</a>
           <!-- 用足够空格分隔重复内容，确保无缝衔接不拥挤 -->
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
-          <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
+          📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at &nbsp;
+          <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()"> WenetSpeech-Yue</a>
         </div>
       </div>
     </h4>
@@ -52,7 +52,7 @@
     /* 滚动速度调慢（80秒/轮，数值越大越慢），保留无限循环 */
     .marquee-content {
       display: flex;
-      animation: marquee 80s linear infinite;
+      animation: marquee 40s linear infinite;
       will-change: transform; /* 提升动画流畅度 */
     }
     @keyframes marquee {
