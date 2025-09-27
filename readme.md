@@ -29,6 +29,12 @@ This is the official repository 👑 for the WenetSpeech-Chuan dataset and the s
     <img src="src/logo/WenetSpeech-Chuan-Logo.png" alt="Institution 5" style="width: 600px; height: 170px; border-radius: 30px;">
 </p>
 
+
+📢：**Good news! 21,800 hours of multi-label Cantonese speech data are also available at [WenetSpeech-Yue](https://github.com/ASLP-lab/WenetSpeech-Yue).**
+
+
+
+
 ## Download
 * The WenetSpeech-Chuan dataset is available at [WenetSpeech-Chuan](https://huggingface.co/datasets/ASLP-lab/WSChuan-Train).
 * The WSChuan-eval benchmark is available at [WSChuan-ASR-eval](https://huggingface.co/datasets/ASLP-lab/WSChuan-Eval) and [WSChuan-TTS-eval](https://huggingface.co/datasets/ASLP-lab/WSChuan-Eval).
