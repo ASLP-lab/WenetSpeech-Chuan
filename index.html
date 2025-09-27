@@ -1012,10 +1012,10 @@ Further supervised fine-tune CosyVoice2-WSC with 100 hours of internal high-qual
   const systems = ["ref", "Cosyvoice2", "CosyVoice2-WSC", "StepAudio", "Llasa-1B-WSC"];
   const systemDisplayNames = {
     "ref": "Reference",
-    "Llasa-1B-WSC": "Llasa-1B-WSC",
+    "Llasa-1B-Chuan": "Llasa-1B-WSC",
     "Cosyvoice2": "Cosyvoice2",
     "StepAudio": "Step-Audio-TTS-3B",
-    "CosyVoice2-WSC": "CosyVoice2-WSC",
+    "CosyVoice2-Chuan": "CosyVoice2-WSC",
   };
 
   // 动态生成表头
@@ -1071,4 +1071,5 @@ Further supervised fine-tune CosyVoice2-WSC with 100 hours of internal high-qual
       document.getElementById('tbody').innerHTML = `<tr><td colspan="${systems.length+1}">Failed to load text.txt: ${err}</td></tr>`;
     });
 </script>
+
 
