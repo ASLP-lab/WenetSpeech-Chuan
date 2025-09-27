@@ -25,9 +25,29 @@
   </section>
 
   <section class="main-content">
-    <h3 id="">
+    <!-- <h3 id="">
       <center>📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at <a href="https://github.com/ASLP-lab/WenetSpeech-Yue">WenetSpeech-Yue</a></center>
+    </h3> -->
+    
+    <h3 id="broadcast" style="margin: 1em 0; overflow: hidden; white-space: nowrap;">
+      <div style="display: inline-block; animation: marquee 20s linear infinite;">
+        📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
+        <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank">WenetSpeech-Yue</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
+        <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank">WenetSpeech-Yue</a>
+      </div>
     </h3>
+    
+    <style>
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
+      #broadcast:hover { animation-play-state: paused; }
+    </style>
+    
+    
     <h1 id="">
       <center>WenetSpeech-Chuan: A Large-Scale Sichuanese Corpus With Rich Annotation For Dialectal Speech Processing</center>
     </h1>
