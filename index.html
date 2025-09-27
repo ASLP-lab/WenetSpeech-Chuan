@@ -30,21 +30,45 @@
     </h3> -->
     
     <h3 id="broadcast" style="margin: 1em 0; overflow: hidden; white-space: nowrap;">
-      <div id="marquee-content" style="display: inline-block; animation: marquee 60s linear infinite;">
-        📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
-        <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
-        <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
+      <div class="marquee-container">
+        <div class="marquee-content">
+          📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
+          <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          📢: Good news! 21,800 hours of multi-label Cantonese speech data are also available at 
+          <a href="https://github.com/ASLP-lab/WenetSpeech-Yue" target="_blank" onmouseover="stopMarquee()" onmouseout="startMarquee()">WenetSpeech-Yue</a>
+        </div>
       </div>
     </h3>
     
     <style>
+    .marquee-container {
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .marquee-content {
+      display: flex;
+      animation: marquee 60s linear infinite;
+      will-change: transform;
+    }
+    
     @keyframes marquee {
       0% { transform: translateX(100%); }
       100% { transform: translateX(-100%); }
     }
     </style>
+    
+    <script>
+    function stopMarquee() {
+      document.querySelector('.marquee-content').style.animationPlayState = 'paused';
+    }
+    
+    function startMarquee() {
+      document.querySelector('.marquee-content').style.animationPlayState = 'running';
+    }
+    </script>
     
     <script>
       function stopMarquee() {
