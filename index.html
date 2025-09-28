@@ -1017,7 +1017,7 @@ Further supervised fine-tune CosyVoice2-WSC with 100 hours of internal high-qual
   systems.forEach(sys => {
     const th = document.createElement('th');
     th.textContent = systemDisplayNames[sys] || sys;
-    if (sys === "Llasa-1B-Chuan" || sys === "CosyVoice2-Chuan") {
+    if (sys === "Llasa-1B-WSC" || sys === "CosyVoice2-WSC") {
       th.style.backgroundColor = "#ffe0b2"; // 高亮颜色
       th.style.fontWeight = "bold";
     }
@@ -1048,7 +1048,7 @@ Further supervised fine-tune CosyVoice2-WSC with 100 hours of internal high-qual
         // 各系统音频
         systems.forEach(sys => {
           const td = document.createElement('td');
-          if (sys === "Llasa-1B-Chuan" || sys === "CosyVoice2-Chuan") {
+          if (sys === "Llasa-1B-WSC" || sys === "CosyVoice2-WSC") {
             td.style.backgroundColor = "#fff3e0"; // 高亮颜色
           }
           const audio = document.createElement('audio');
