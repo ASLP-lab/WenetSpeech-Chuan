@@ -33,10 +33,9 @@ This is the official repository 👑 for the WenetSpeech-Chuan dataset and the s
 
 
 
-
 ## Download
 * The WenetSpeech-Chuan dataset is available at [WenetSpeech-Chuan](https://huggingface.co/datasets/ASLP-lab/WSChuan-Train).
-* The WSChuan-eval benchmark is available at [WSChuan-ASR-eval](https://huggingface.co/datasets/ASLP-lab/WSChuan-Eval) and [WSChuan-TTS-eval](https://huggingface.co/datasets/ASLP-lab/WSChuan-Eval).
+* The WSChuan-eval benchmark is available at [WSChuan-ASR-eval](https://huggingface.co/datasets/ASLP-lab/WSC-Eval) and [WSChuan-TTS-eval](https://huggingface.co/datasets/ASLP-lab/WSC-Eval).
 * The ASR models are available at [WSChuan-ASR](https://huggingface.co/ASLP-lab/WSChuan-ASR).
 * The TTS models are available at [WSChuan-TTS](https://huggingface.co/ASLP-lab/WSChuan-TTS).
 
