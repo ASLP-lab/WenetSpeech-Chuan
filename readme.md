@@ -178,7 +178,7 @@ If you are interested in leaving a message to our research team, feel free to em
 
 You’re also welcome to join our WeChat group for technical discussions, updates, and — as mentioned above — access to pre-processed audio data.
 <p align="center">
-<img src="src/figs/wechat.jpg" width="300" alt="WeChat Group QR Code"/>
+<img src="src/figs/wechat_2.png" width="300" alt="WeChat Group QR Code"/>
 <br>
 <em>Scan to join our WeChat discussion group</em>
 <br>
