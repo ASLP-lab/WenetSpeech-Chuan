@@ -1,4 +1,6 @@
-📢：**Good news! 21,800 hours of multi-label Cantonese speech data are also available at [⭐WenetSpeech-Yue⭐](https://github.com/ASLP-lab/WenetSpeech-Yue).**
+📢：**Good news! 21,800 hours of multi-label Cantonese speech data are also available at [⭐WenetSpeech-Yue⭐](https://github.com/ASLP-lab/WenetSpeech-Yue).** 
+
+📢：**Good news! 8000 hours of multi-label Wu dialect data are also available at [⭐WenetSpeech-Wu⭐](https://github.com/ASLP-lab/WenetSpeech-Wu-Repo).**
 
 # WenetSpeech-Chuan: A Large-Scale Sichuanese Corpus with Rich Annotation for Dialectal Speech Processing
 
